@@ -100,10 +100,24 @@ body {
   border-color: red !important;
   text: white;
 }
-
-.bg-dark-red {
-  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:active {
+  color: #000 !important; /* force text color */
+  background-color: transparent !important; /* remove blue bg highlight */
+  outline: none !important; /* remove blue outline */
+  box-shadow: none !important; /* remove glow effect */
 }
+.bg-dark-red {
+  background: linear-gradient(135deg, #c91b1bff 0%, #b91c1c 100%);
+}
+.text-dark-red {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Service Cards */
 .service-icon {
   width: 80px;
