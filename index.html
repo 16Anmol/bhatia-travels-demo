@@ -1,59 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhatia Travels - Your Gateway to Unforgettable Journeys</title>
-    <meta name="description" content="Founded in 1982, Bhatia Travels offers over 40 years of expertise in travel and tourism. IATA-approved agent and TAAI member providing comprehensive travel solutions.">
-    
+    <meta name="description"
+        content="Founded in 1982, Bhatia Travels offers over 40 years of expertise in travel and tourism. IATA-approved agent and TAAI member providing comprehensive travel solutions.">
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="public/images/logo-main.png" alt="Bhatia Travels" width="40" height="40" class="me-2">
+                <img src="public/images/headerf1.jpeg" alt="Bhatia Travels" width="130" height="68" class="me-2">
                 <div>
-                    <div class="fw-bold text-danger fs-5" style="font-family: 'Times New Roman', Times, serif;">BHATIA TRAVELS</div>
+                    <!-- <div class="fw-bold text-danger fs-5" style="font-family: 'Times New Roman', Times, serif;">
+                        BHATIA TRAVELS
+                    </div>
                     <small class="text-muted">Est. 1982</small>
-                </div>
+                </div>-->
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
+            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+
+                    <!-- Desktop Dropdown -->
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="visa.html">Visa Services</a></li>
                             <li><a class="dropdown-item" href="ticketing.html">Air Ticketing</a></li>
                             <li><a class="dropdown-item" href="packages.html">Holiday Packages</a></li>
                         </ul>
                     </li>
+
+                    <!-- Mobile (no dropdown, direct links) -->
+                    <li class="nav-item d-lg-none">
+                        <span class="nav-link fw-bold">Services</span>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="visa.html">Visa Services</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="ticketing.html">Air Ticketing</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="packages.html">Holiday Packages</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!-- Hero Section -->
     <section class="hero-section position-relative d-flex align-items-center justify-content-center text-center">
@@ -61,7 +91,8 @@
         <div class="container position-relative">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <h1 class="hero-title display-1 fw-bold mb-4 text-dark" style="font-family: 'Times New Roman', Times, serif;">
+                    <h1 class="hero-title display-1 fw-bold mb-4 text-dark"
+                        style="font-family: 'Times New Roman', Times, serif;">
                         BHATIA TRAVELS
                     </h1>
                     <p class="hero-subtitle display-6 mb-3 text-secondary fw-light">
@@ -70,7 +101,7 @@
                     <p class="lead mb-5 text-muted">
                         Founded 1982 • 40+ Years of Excellence • IATA-Approved • TAAI Member
                     </p>
-                    
+
                     <!-- Service Cards -->
                     <div class="row g-3 mb-5">
                         <div class="col-md-4">
@@ -101,18 +132,18 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- CTA Buttons -->
                     <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-4">
-                        <a href="services.html" class="btn btn-danger btn-lg px-4">Explore All Services</a>
+                        <a href="visa.html" class="btn btn-danger btn-lg px-4">Explore All Services</a>
                         <a href="tel:+919814927575" class="btn btn-outline-danger btn-lg px-4">
                             <i class="bi bi-telephone me-2"></i>Call Now
                         </a>
                     </div>
-                    
+
                     <!-- Stats -->
                     <div class="text-muted">
-                        <p class="mb-2">Trusted by 10,000+ Happy Travelers</p>
+                        <p class="mb-2">Trusted by 10K+ Happy Travelers</p>
                         <div class="d-flex justify-content-center align-items-center gap-2">
                             <div class="text-warning">
                                 <i class="bi bi-star-fill"></i>
@@ -134,21 +165,24 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold text-dark mb-4">Our Complete Travel Solutions</h2>
-                <p class="lead text-muted">Three specialized departments working together to provide comprehensive travel services with 40+ years of expertise</p>
+                <p class="lead text-muted">Three specialized departments working together to provide comprehensive
+                    travel services with 40+ years of expertise</p>
             </div>
-            
+
             <div class="row g-4 mb-5">
                 <!-- Visa Services -->
                 <div class="col-lg-4">
                     <div class="card h-100 border-2 border-light hover-card">
                         <div class="card-body p-4 text-center">
-                            <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                            <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px;">
                                 <i class="bi bi-file-text text-danger fs-2"></i>
                             </div>
                             <h4 class="card-title fw-bold mb-3">Visa Services</h4>
                             <span class="badge bg-danger mb-3">High Approval Rate</span>
-                            <p class="card-text text-muted mb-4">Expert visa processing with high approval rates for student, tourist, and business visas</p>
-                            
+                            <p class="card-text text-muted mb-4">Expert visa processing with high approval rates for
+                                student, tourist, and business visas</p>
+
                             <div class="mb-4">
                                 <h6 class="fw-semibold mb-2">Services Include:</h6>
                                 <ul class="list-unstyled small text-muted">
@@ -159,13 +193,13 @@
                                     <li><i class="bi bi-dot"></i> Document Assistance</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="bg-light p-3 rounded mb-4">
                                 <p class="small text-muted mb-1">Direct Contact</p>
                                 <p class="fw-semibold mb-1">+91 9814627575</p>
                                 <p class="small text-muted mb-0">visa@bhatiatravels.com</p>
                             </div>
-                            
+
                             <div class="d-flex gap-2">
                                 <a href="visa.html" class="btn btn-danger btn-sm flex-fill">Learn More</a>
                                 <a href="tel:+919814627575" class="btn btn-outline-danger btn-sm">
@@ -178,18 +212,20 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Air Ticketing -->
                 <div class="col-lg-4">
                     <div class="card h-100 border-2 border-light hover-card">
                         <div class="card-body p-4 text-center">
-                            <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                            <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px;">
                                 <i class="bi bi-airplane text-danger fs-2"></i>
                             </div>
                             <h4 class="card-title fw-bold mb-3">Air Ticketing</h4>
                             <span class="badge bg-danger mb-3">IATA Certified</span>
-                            <p class="card-text text-muted mb-4">IATA-certified ticketing services for domestic and international flights with competitive rates</p>
-                            
+                            <p class="card-text text-muted mb-4">IATA-certified ticketing services for domestic and
+                                international flights with competitive rates</p>
+
                             <div class="mb-4">
                                 <h6 class="fw-semibold mb-2">Services Include:</h6>
                                 <ul class="list-unstyled small text-muted">
@@ -200,13 +236,13 @@
                                     <li><i class="bi bi-dot"></i> Customer Support</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="bg-light p-3 rounded mb-4">
                                 <p class="small text-muted mb-1">Direct Contact</p>
                                 <p class="fw-semibold mb-1">+91 9915327575</p>
                                 <p class="small text-muted mb-0">fly@bhatiatravels.com</p>
                             </div>
-                            
+
                             <div class="d-flex gap-2">
                                 <a href="ticketing.html" class="btn btn-danger btn-sm flex-fill">Learn More</a>
                                 <a href="tel:+919915327575" class="btn btn-outline-danger btn-sm">
@@ -219,18 +255,20 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Holiday Packages -->
                 <div class="col-lg-4">
                     <div class="card h-100 border-2 border-light hover-card">
                         <div class="card-body p-4 text-center">
-                            <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                            <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px;">
                                 <i class="bi bi-calendar-event text-danger fs-2"></i>
                             </div>
                             <h4 class="card-title fw-bold mb-3">Holiday Packages</h4>
                             <span class="badge bg-danger mb-3">40+ Years Experience</span>
-                            <p class="card-text text-muted mb-4">Customized tour packages for domestic and international destinations with complete travel solutions</p>
-                            
+                            <p class="card-text text-muted mb-4">Customized tour packages for domestic and international
+                                destinations with travel solutions</p>
+
                             <div class="mb-4">
                                 <h6 class="fw-semibold mb-2">Services Include:</h6>
                                 <ul class="list-unstyled small text-muted">
@@ -241,13 +279,13 @@
                                     <li><i class="bi bi-dot"></i> Destination Weddings</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="bg-light p-3 rounded mb-4">
                                 <p class="small text-muted mb-1">Direct Contact</p>
                                 <p class="fw-semibold mb-1">+91 9814927575</p>
                                 <p class="small text-muted mb-0">info@bhatiatravels.com</p>
                             </div>
-                            
+
                             <div class="d-flex gap-2">
                                 <a href="packages.html" class="btn btn-danger btn-sm flex-fill">Learn More</a>
                                 <a href="tel:+919814927575" class="btn btn-outline-danger btn-sm">
@@ -261,31 +299,34 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Why Choose Us -->
             <div class="bg-light border rounded p-5">
                 <div class="text-center mb-4">
                     <h3 class="fw-bold mb-2">Why Choose Bhatia Travels?</h3>
                     <p class="text-muted">Trusted expertise across all travel services since 1982</p>
                 </div>
-                
+
                 <div class="row g-4">
                     <div class="col-md-4 text-center">
-                        <div class="bg-white border rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <div class="bg-white border rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
                             <i class="bi bi-emoji-smile text-secondary fs-4"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Customer Friendly</h5>
                         <p class="text-muted small">Dedicated support and personalized service for every traveler</p>
                     </div>
                     <div class="col-md-4 text-center">
-                        <div class="bg-white border rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <div class="bg-white border rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
                             <i class="bi bi-shield-check text-secondary fs-4"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Government Approved</h5>
                         <p class="text-muted small">Approved by Ministry of External Affairs & Punjab Government</p>
                     </div>
                     <div class="col-md-4 text-center">
-                        <div class="bg-white border rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <div class="bg-white border rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
                             <i class="bi bi-people text-secondary fs-4"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">10,000+ Customers</h5>
@@ -301,9 +342,10 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold mb-4">What Our Customers Say</h2>
-                <p class="lead text-muted">Don't just take our word for it. Here's what our satisfied customers have to say about their travel experiences with Bhatia Travels.</p>
+                <p class="lead text-muted">Don't just take our word for it. Here's what our satisfied customers have to
+                    say about their travel experiences with Bhatia Travels.</p>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm">
@@ -318,7 +360,9 @@
                                     <i class="bi bi-star-fill"></i>
                                 </div>
                             </div>
-                            <p class="card-text text-muted fst-italic mb-4">"Best in town and there visa travel services are top notch and especially manisha, she is so cooperative with each person she meets and does her job at its best"</p>
+                            <p class="card-text text-muted fst-italic mb-4">"Best in town and there visa travel services
+                                are top notch and especially manisha, she is so cooperative with each person she meets
+                                and does her job at its best"</p>
                             <div class="border-top pt-3">
                                 <h6 class="fw-semibold mb-1">Alky Bharti</h6>
                                 <p class="text-muted small mb-0">Amritsar</p>
@@ -326,7 +370,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-body p-4">
@@ -340,7 +384,10 @@
                                     <i class="bi bi-star-fill"></i>
                                 </div>
                             </div>
-                            <p class="card-text text-muted fst-italic mb-4">"I am very happy with their services, staff is very co-operative and full of knowledge. Specially param sir is very nice and just because of his efforts i am here in Canada. He supported me in everything and did his best.😊👍🌟"</p>
+                            <p class="card-text text-muted fst-italic mb-4">"I am very happy with their services, staff
+                                is very co-operative and full of knowledge. Specially param sir is very nice and just
+                                because of his efforts i am here in Canada. He supported me in everything and did his
+                                best.😊👍🌟"</p>
                             <div class="border-top pt-3">
                                 <h6 class="fw-semibold mb-1">Amanpreet Kaur</h6>
                                 <p class="text-muted small mb-1">Jalandhar</p>
@@ -349,7 +396,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-body p-4">
@@ -363,7 +410,9 @@
                                     <i class="bi bi-star"></i>
                                 </div>
                             </div>
-                            <p class="card-text text-muted fst-italic mb-4">"Professional service and competitive prices. They helped us with visa processing and made our Europe trip hassle-free. Thank you Bhatia Travels!"</p>
+                            <p class="card-text text-muted fst-italic mb-4">"Professional service and competitive
+                                prices. They helped us with visa processing and made our Europe trip hassle-free. Thank
+                                you Bhatia Travels!"</p>
                             <div class="border-top pt-3">
                                 <h6 class="fw-semibold mb-1">Anjali Gupta</h6>
                                 <p class="text-muted small mb-1">Ludhiana</p>
@@ -373,16 +422,17 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Stats Card -->
             <div class="text-center mt-5">
                 <div class="card bg-white border-0 shadow-sm mx-auto" style="max-width: 600px;">
                     <div class="card-body p-5">
                         <h4 class="fw-bold mb-4">Join Thousands of Happy Travelers</h4>
-                        <p class="text-muted mb-4">Experience the difference that 40+ years of expertise makes. Let us create your perfect journey.</p>
+                        <p class="text-muted mb-4">Experience the difference that 40+ years of expertise makes. Let us
+                            create your perfect journey.</p>
                         <div class="row text-center">
                             <div class="col-4">
-                                <div class="display-6 fw-bold text-dark">10,000+</div>
+                                <div class="display-6 fw-bold text-dark">10K+</div>
                                 <div class="text-muted">Happy Customers</div>
                             </div>
                             <div class="col-4">
@@ -407,10 +457,12 @@
                 <!-- Company Info -->
                 <div class="col-md-3">
                     <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="public/images/logo-footer.png" alt="Bhatia Travels" width="28" height="28">
-                        <h5 class="fw-bold text-danger mb-0" style="font-family: 'Times New Roman', Times, serif;">BHATIA TRAVELS</h5>
+                        <img src="public/images/footerl1.jpeg" alt="Bhatia Travels" width="240" height="58">
+                        <!--  <h5 class="fw-bold text-danger mb-0" style="font-family: 'Times New Roman', Times, serif;">
+                            BHATIA TRAVELS</h5> -->
                     </div>
-                    <p class="text-muted small mb-3">Founded in 1982, bringing over 40 years of expertise in travel and tourism.</p>
+                    <p class="text-muted small mb-3">Founded in 1982, bringing over 40 years of expertise in travel and
+                        tourism.</p>
                     <div class="small text-danger">
                         <div class="d-flex align-items-center gap-2 mb-1">
                             <i class="bi bi-telephone"></i>
@@ -422,19 +474,21 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Quick Links -->
                 <div class="col-md-2">
                     <h6 class="fw-semibold mb-3">Quick Links</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-1"><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
                         <li class="mb-1"><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
-                        <li class="mb-1"><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
-                        <li class="mb-1"><a href="packages.html" class="text-muted text-decoration-none">Tour Packages</a></li>
+                        <li class="mb-1"><a href="services.html" class="text-muted text-decoration-none">Services</a>
+                        </li>
+                        <li class="mb-1"><a href="packages.html" class="text-muted text-decoration-none">Tour
+                                Packages</a></li>
                         <li class="mb-1"><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Services -->
                 <div class="col-md-2">
                     <h6 class="fw-semibold mb-3">Our Services</h6>
@@ -446,7 +500,7 @@
                         <li class="mb-1">Destination Weddings</li>
                     </ul>
                 </div>
-                
+
                 <!-- Office Locations -->
                 <div class="col-md-3">
                     <h6 class="fw-semibold mb-3">Office Locations</h6>
@@ -473,7 +527,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Follow Us -->
                 <div class="col-md-2">
                     <h6 class="fw-semibold mb-3">Follow Us</h6>
@@ -487,16 +541,18 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-top mt-4 pt-3 text-center">
-                <p class="text-muted small mb-0">&copy; 2024 Bhatia Travels. All rights reserved. | IATA-Approved | TAAI Member</p>
+                <p class="text-muted small mb-0">&copy; 2024 Bhatia Travels. All rights reserved. | IATA-Approved | TAAI
+                    Member</p>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

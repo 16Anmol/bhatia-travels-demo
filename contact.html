@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Bhatia Travels</title>
-    <meta name="description" content="Get in touch with Bhatia Travels. Contact our travel experts for visa services, air ticketing, and holiday packages.">
-    
+    <meta name="description"
+        content="Get in touch with Bhatia Travels. Contact our travel experts for visa services, air ticketing, and holiday packages.">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -13,48 +15,69 @@
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="public/images/logo-main.png" alt="Bhatia Travels" width="40" height="40" class="me-2">
+                <img src="public/images/headerf1.jpeg" alt="Bhatia Travels" width="130" height="68" class="me-2">
                 <div>
-                    <div class="fw-bold text-danger fs-5" style="font-family: 'Times New Roman', Times, serif;">BHATIA TRAVELS</div>
-                    <small class="text-muted">Est. 1982</small>
                 </div>
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
+            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+
+                    <!-- Desktop Dropdown -->
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="visa.html">Visa Services</a></li>
                             <li><a class="dropdown-item" href="ticketing.html">Air Ticketing</a></li>
                             <li><a class="dropdown-item" href="packages.html">Holiday Packages</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+
+                    <!-- Mobile (no dropdown, direct links) -->
+                    <li class="nav-item d-lg-none">
+                        <span class="nav-link fw-bold">Services</span>
                     </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="visa.html">Visa Services</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="ticketing.html">Air Ticketing</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="packages.html">Holiday Packages</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Contact Hero -->
     <section class="bg-gradient-danger text-white py-5">
         <div class="container text-center">
@@ -96,31 +119,39 @@
                     <div class="card border-0 shadow-sm">
                         <div class="card-header bg-white border-0 p-4">
                             <h3 class="fw-bold mb-2">Send Us a Message</h3>
-                            <p class="text-muted mb-0">Fill out the form below and we'll get back to you within 24 hours</p>
+                            <p class="text-muted mb-0">Fill out the form below and we'll get back to you within 24 hours
+                            </p>
                         </div>
                         <div class="card-body p-4">
                             <form data-contact-form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label for="name" class="form-label fw-semibold">Full Name *</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Your full name" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="phone" class="form-label fw-semibold">Phone Number *</label>
-                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            placeholder="+91 XXXXX XXXXX" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label fw-semibold">Email Address *</label>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="your.email@example.com" required>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="your.email@example.com" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="destination" class="form-label fw-semibold">Preferred Destination</label>
-                                    <input type="text" class="form-control" id="destination" name="destination" placeholder="e.g., Thailand, Kashmir, Dubai">
+                                    <label for="destination" class="form-label fw-semibold">Preferred
+                                        Destination</label>
+                                    <input type="text" class="form-control" id="destination" name="destination"
+                                        placeholder="e.g., Thailand, Kashmir, Dubai">
                                 </div>
                                 <div class="mb-4">
                                     <label for="message" class="form-label fw-semibold">Message *</label>
-                                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Tell us about your travel plans, budget, preferred dates, and any special requirements..." required></textarea>
+                                    <textarea class="form-control" id="message" name="message" rows="6"
+                                        placeholder="Tell us about your travel plans, budget, preferred dates, and any special requirements..."
+                                        required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-danger btn-lg w-100">Send Message</button>
                             </form>
@@ -130,21 +161,24 @@
 
                 <!-- Contact Information -->
                 <div class="col-lg-4">
-                    <div class="sticky-top" style="top: 100px;">
+                    <div style="top: 100px;">
                         <!-- Get In Touch -->
                         <div class="card border-0 shadow-sm mb-4">
                             <div class="card-body p-4">
                                 <h5 class="fw-bold mb-4">Get In Touch</h5>
                                 <div class="d-grid gap-3">
-                                    <a href="tel:+919814927575" class="btn btn-outline-danger d-flex align-items-center justify-content-start">
+                                    <a href="tel:+919814927575"
+                                        class="btn btn-outline-danger d-flex align-items-center justify-content-start">
                                         <i class="bi bi-telephone me-3"></i>
                                         Call Now: +91 9814927575
                                     </a>
-                                    <a href="https://wa.me/919814927575" class="btn btn-outline-success d-flex align-items-center justify-content-start">
+                                    <a href="https://wa.me/919814927575"
+                                        class="btn btn-outline-success d-flex align-items-center justify-content-start">
                                         <i class="bi bi-whatsapp me-3"></i>
                                         WhatsApp Us
                                     </a>
-                                    <a href="mailto:info@bhatiatravels.com" class="btn btn-outline-danger d-flex align-items-center justify-content-start">
+                                    <a href="mailto:info@bhatiatravels.com"
+                                        class="btn btn-outline-danger d-flex align-items-center justify-content-start">
                                         <i class="bi bi-envelope me-3"></i>
                                         Email Inquiry
                                     </a>
@@ -173,15 +207,18 @@
                                 <h5 class="fw-bold mb-4">Why Contact Us?</h5>
                                 <ul class="list-unstyled">
                                     <li class="d-flex align-items-start mb-3">
-                                        <div class="bg-danger rounded-circle me-3 mt-1" style="width: 8px; height: 8px;"></div>
+                                        <div class="bg-danger rounded-circle me-3 mt-1"
+                                            style="width: 8px; height: 8px;"></div>
                                         <span class="text-muted">Free consultation and travel planning</span>
                                     </li>
                                     <li class="d-flex align-items-start mb-3">
-                                        <div class="bg-danger rounded-circle me-3 mt-1" style="width: 8px; height: 8px;"></div>
+                                        <div class="bg-danger rounded-circle me-3 mt-1"
+                                            style="width: 8px; height: 8px;"></div>
                                         <span class="text-muted">Customized packages within your budget</span>
                                     </li>
                                     <li class="d-flex align-items-start">
-                                        <div class="bg-danger rounded-circle me-3 mt-1" style="width: 8px; height: 8px;"></div>
+                                        <div class="bg-danger rounded-circle me-3 mt-1"
+                                            style="width: 8px; height: 8px;"></div>
                                         <span class="text-muted">Visa assistance and documentation help</span>
                                     </li>
                                 </ul>
@@ -198,7 +235,8 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold mb-4">Our Office Locations</h2>
-                <p class="lead text-muted">Visit us at our convenient locations in Jalandhar and Amritsar. Our experienced team is ready to help you plan your perfect journey.</p>
+                <p class="lead text-muted">Visit us at our convenient locations in Jalandhar and Amritsar. Our
+                    experienced team is ready to help you plan your perfect journey.</p>
             </div>
 
             <div class="row g-4">
@@ -207,7 +245,8 @@
                     <div class="card h-100 border-danger">
                         <div class="card-body p-4">
                             <div class="d-flex align-items-center mb-4">
-                                <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 50px; height: 50px;">
                                     <i class="bi bi-geo-alt fs-5"></i>
                                 </div>
                                 <div>
@@ -215,17 +254,18 @@
                                     <span class="badge bg-danger">Main Office</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mb-3">
                                 <div class="d-flex align-items-start mb-2">
                                     <i class="bi bi-geo-alt text-danger me-2 mt-1"></i>
                                     <div>
                                         <p class="fw-medium mb-1">Address:</p>
-                                        <p class="text-muted mb-0">925, GT Road, Near Gen. Bus Stand, Jalandhar, India 144001</p>
+                                        <p class="text-muted mb-0">925, GT Road, Near Gen. Bus Stand, Jalandhar, India
+                                            144001</p>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="mb-3">
                                 <div class="d-flex align-items-start mb-2">
                                     <i class="bi bi-telephone text-danger me-2 mt-1"></i>
@@ -237,7 +277,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="mb-4">
                                 <div class="d-flex align-items-start">
                                     <i class="bi bi-clock text-danger me-2 mt-1"></i>
@@ -250,12 +290,14 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="bg-light p-3 rounded mb-4">
-                                <p class="small text-muted mb-0"><strong>Main Office:</strong> Conveniently located near the General Bus Stand for easy accessibility from all parts of Jalandhar.</p>
+                                <p class="small text-muted mb-0"><strong>Main Office:</strong> Conveniently located near
+                                    the General Bus Stand for easy accessibility from all parts of Jalandhar.</p>
                             </div>
-                            
-                            <a href="https://www.google.com/maps/place/Bhatia+Travels" target="_blank" class="btn btn-danger w-100">
+
+                            <a href="https://www.google.com/maps/place/Bhatia+Travels" target="_blank"
+                                class="btn btn-danger w-100">
                                 View on Google Maps
                             </a>
                         </div>
@@ -264,31 +306,32 @@
 
                 <!-- Amritsar Office -->
                 <div class="col-lg-6">
-                    <div class="card h-100 border-secondary">
+                    <div class="card h-100 border-danger">
                         <div class="card-body p-4">
                             <div class="d-flex align-items-center mb-4">
-                                <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 50px; height: 50px;">
                                     <i class="bi bi-geo-alt fs-5"></i>
                                 </div>
                                 <div>
                                     <h4 class="fw-bold mb-1">Amritsar Office</h4>
-                                    <span class="badge bg-secondary">Branch Office</span>
+                                    <span class="badge bg-danger">Branch Office</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mb-3">
                                 <div class="d-flex align-items-start mb-2">
-                                    <i class="bi bi-geo-alt text-secondary me-2 mt-1"></i>
+                                    <i class="bi bi-geo-alt text-danger me-2 mt-1"></i>
                                     <div>
                                         <p class="fw-medium mb-1">Address:</p>
                                         <p class="text-muted mb-0">B - Block, Ranjit Avenue, Amritsar, Punjab 143001</p>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="mb-3">
                                 <div class="d-flex align-items-start mb-2">
-                                    <i class="bi bi-telephone text-secondary me-2 mt-1"></i>
+                                    <i class="bi bi-telephone text-danger me-2 mt-1"></i>
                                     <div>
                                         <p class="fw-medium mb-1">Contact:</p>
                                         <p class="text-muted mb-1">Landline: 0183-5007000</p>
@@ -297,10 +340,10 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="mb-4">
                                 <div class="d-flex align-items-start">
-                                    <i class="bi bi-clock text-secondary me-2 mt-1"></i>
+                                    <i class="bi bi-clock text-danger me-2 mt-1"></i>
                                     <div>
                                         <p class="fw-medium mb-1">Business Hours:</p>
                                         <div class="text-muted small">
@@ -310,12 +353,14 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="bg-light p-3 rounded mb-4">
-                                <p class="small text-muted mb-0"><strong>Branch Office:</strong> Strategic location in the heart of Amritsar for local accessibility, near La Pizzeria.</p>
+                                <p class="small text-muted mb-0"><strong>Branch Office:</strong> Strategic location in
+                                    the heart of Amritsar for local accessibility, near La Pizzeria.</p>
                             </div>
-                            
-                            <a href="https://www.google.com/maps/place/Bhatia+Travels" target="_blank" class="btn btn-secondary w-100">
+
+                            <a href="https://www.google.com/maps/place/Bhatia+Travels" target="_blank"
+                                class="btn btn-danger w-100">
                                 View on Google Maps
                             </a>
                         </div>
@@ -328,17 +373,29 @@
                 <div class="card border-0 shadow-sm">
                     <div class="card-body p-4">
                         <h4 class="fw-bold mb-4 text-center">Find Us on Map</h4>
-                        <div class="bg-light rounded" style="height: 400px;">
-                            <iframe 
+
+                        <!-- Map Container -->
+                        <div class="bg-light rounded position-relative" style="height: 400px;">
+                            <!-- Jalandhar Map -->
+                            <iframe id="map-jalandhar"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13637.951211430848!2d75.5855!3d31.3141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39101bc52205c1e1%3A0x93431fd3a80f541f!2sBhatia%20Travels!5e0!3m2!1sen!2sin!4v1699192119461!5m2!1sen!2sin"
-                                width="100%" 
-                                height="100%" 
-                                style="border:0; border-radius: 8px;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                                width="100%" height="100%" style="border:0; border-radius: 8px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            <!-- Amritsar Map (hidden by default) -->
+                            <iframe id="map-amritsar" class="d-none"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.5234567890123!2d74.8630489!3d31.650644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919649822dd58a7%3A0x47161a4df93650b!2sB%20-%20Block%2C%20Ranjit%20Avenue%2C%20Amritsar%2C%20Punjab%20143001!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0; border-radius: 8px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
+
+                        <!-- Controls -->
+                        <div class="d-flex justify-content-between mt-3">
+                            <button class="btn btn-outline-danger" onclick="showMap('jalandhar')">← Jalandhar</button>
+                            <button class="btn btn-outline-danger" onclick="showMap('amritsar')">Amritsar →</button>
+                        </div>
+
+                        <!-- Office Info -->
                         <div class="row g-4 mt-3 text-center">
                             <div class="col-md-6">
                                 <h6 class="fw-semibold mb-2">Jalandhar Office</h6>
@@ -354,177 +411,213 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="py-5 bg-white">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-danger mb-4">Frequently Asked Questions</h2>
-                <p class="lead text-muted">Find answers to common questions about our travel services and booking process.</p>
-            </div>
+            <!-- FAQ Section -->
+            <section class="py-5 bg-white">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold text-danger mb-4">Frequently Asked Questions</h2>
+                        <p class="lead text-muted">Find answers to common questions about our travel services and
+                            booking
+                            process.</p>
+                    </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item border-danger mb-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-semibold text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    Do travel agents help in making flight reservations?
-                                </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    Yes, travel agents help their clients in making flight reservations. They will help you book a seat as per your budget. To know more contact Bhatia Travels and discuss the same in detail.
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item border-danger mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-semibold text-danger" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq1">
+                                            Do travel agents help in making flight reservations?
+                                        </button>
+                                    </h2>
+                                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            Yes, travel agents help their clients in making flight reservations. They
+                                            will help
+                                            you book a seat as per your budget. To know more contact Bhatia Travels and
+                                            discuss
+                                            the same in detail.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-danger mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-semibold text-danger" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq2">
+                                            Does Bhatia Travels help create an itinerary for the trip?
+                                        </button>
+                                    </h2>
+                                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            Yes, many travel agents will prepare an itinerary for your travel trip and
+                                            make
+                                            reservations based on that.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-danger mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-semibold text-danger" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq3">
+                                            What are the business hours of Bhatia Travels?
+                                        </button>
+                                    </h2>
+                                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            The business hours of Bhatia Travels are Monday to Friday: 9:30 am - 6:00
+                                            pm,
+                                            Saturday: 9:30 am - 6:00 pm, Sunday: Closed.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-danger">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-semibold text-danger" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq4">
+                                            How effective are the services of Bhatia Travels?
+                                        </button>
+                                    </h2>
+                                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            Having received the customer rating of 4.0, Bhatia Travels has become a
+                                            well-known
+                                            company ranking high in Travel Agents in Amritsar.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-white border-top py-4">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-3">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <img src="public/images/footerl1.jpeg" alt="Bhatia Travels" width="240" height="58">
+                                <!--  <h5 class="fw-bold text-danger mb-0" style="font-family: 'Times New Roman', Times, serif;">
+                            BHATIA TRAVELS</h5> -->
+                            </div>
+                            <p class="text-muted small mb-3">Founded in 1982, bringing over 40 years of expertise in
+                                travel and
+                                tourism.</p>
+                            <div class="small text-danger">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>Jalandhar: 0181-4605000</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>Amritsar: 0183 5007000</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion-item border-danger mb-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-semibold text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    Does Bhatia Travels help create an itinerary for the trip?
-                                </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    Yes, many travel agents will prepare an itinerary for your travel trip and make reservations based on that.
+                        <div class="col-md-2">
+                            <h6 class="fw-semibold mb-3">Quick Links</h6>
+                            <ul class="list-unstyled small">
+                                <li class="mb-1"><a href="index.html" class="text-muted text-decoration-none">Home</a>
+                                </li>
+                                <li class="mb-1"><a href="about.html" class="text-muted text-decoration-none">About
+                                        Us</a></li>
+                                <li class="mb-1"><a href="services.html"
+                                        class="text-muted text-decoration-none">Services</a>
+                                </li>
+                                <li class="mb-1"><a href="packages.html" class="text-muted text-decoration-none">Tour
+                                        Packages</a></li>
+                                <li class="mb-1"><a href="contact.html"
+                                        class="text-muted text-decoration-none">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h6 class="fw-semibold mb-3">Our Services</h6>
+                            <ul class="list-unstyled small text-muted">
+                                <li class="mb-1">Air Ticketing</li>
+                                <li class="mb-1">Holiday Packages</li>
+                                <li class="mb-1">Visa Assistance</li>
+                                <li class="mb-1">Travel Insurance</li>
+                                <li class="mb-1">Destination Weddings</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h6 class="fw-semibold mb-3">Office Locations</h6>
+                            <div class="mb-3">
+                                <h6 class="small fw-medium mb-1">Jalandhar</h6>
+                                <div class="text-muted small">
+                                    <div class="d-flex align-items-start gap-1">
+                                        <i class="bi bi-geo-alt mt-1"></i>
+                                        <span>925, GT Road, Near Gen. Bus Stand</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="small fw-medium mb-1">Amritsar</h6>
+                                <div class="text-muted small">
+                                    <div class="d-flex align-items-start gap-1">
+                                        <i class="bi bi-geo-alt mt-1"></i>
+                                        <span>B - Block, Ranjit Avenue</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion-item border-danger mb-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-semibold text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    What are the business hours of Bhatia Travels?
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    The business hours of Bhatia Travels are Monday to Friday: 9:30 am - 6:00 pm, Saturday: 9:30 am - 6:00 pm, Sunday: Closed.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item border-danger">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-semibold text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                    How effective are the services of Bhatia Travels?
-                                </button>
-                            </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    Having received the customer rating of 4.0, Bhatia Travels has become a well-known company ranking high in Travel Agents in Amritsar.
-                                </div>
+                        <div class="col-md-2">
+                            <h6 class="fw-semibold mb-3">Follow Us</h6>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.instagram.com/bhatiatravels_/?hl=en" target="_blank"
+                                    class="text-pink">
+                                    <i class="bi bi-instagram fs-5"></i>
+                                </a>
+                                <a href="https://www.facebook.com/bhatiatravels1982/" target="_blank"
+                                    class="text-primary">
+                                    <i class="bi bi-facebook fs-5"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-top py-4">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="public/images/logo-footer.png" alt="Bhatia Travels" width="28" height="28">
-                        <h5 class="fw-bold text-danger mb-0" style="font-family: 'Times New Roman', Times, serif;">BHATIA TRAVELS</h5>
-                    </div>
-                    <p class="text-muted small mb-3">Founded in 1982, bringing over 40 years of expertise in travel and tourism.</p>
-                    <div class="small text-danger">
-                        <div class="d-flex align-items-center gap-2 mb-1">
-                            <i class="bi bi-telephone"></i>
-                            <span>Jalandhar: 0181-4605000</span>
-                        </div>
-                        <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-telephone"></i>
-                            <span>Amritsar: 0183 5007000</span>
-                        </div>
+                    <div class="border-top mt-4 pt-3 text-center">
+                        <p class="text-muted small mb-0">&copy; 2024 Bhatia Travels. All rights reserved. |
+                            IATA-Approved | TAAI
+                            Member</p>
                     </div>
                 </div>
-                
-                <div class="col-md-2">
-                    <h6 class="fw-semibold mb-3">Quick Links</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-1"><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
-                        <li class="mb-1"><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
-                        <li class="mb-1"><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
-                        <li class="mb-1"><a href="packages.html" class="text-muted text-decoration-none">Tour Packages</a></li>
-                        <li class="mb-1"><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-2">
-                    <h6 class="fw-semibold mb-3">Our Services</h6>
-                    <ul class="list-unstyled small text-muted">
-                        <li class="mb-1">Air Ticketing</li>
-                        <li class="mb-1">Holiday Packages</li>
-                        <li class="mb-1">Visa Assistance</li>
-                        <li class="mb-1">Travel Insurance</li>
-                        <li class="mb-1">Destination Weddings</li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-3">
-                    <h6 class="fw-semibold mb-3">Office Locations</h6>
-                    <div class="mb-3">
-                        <h6 class="small fw-medium mb-1">Jalandhar</h6>
-                        <div class="text-muted small">
-                            <div class="d-flex align-items-start gap-1">
-                                <i class="bi bi-geo-alt mt-1"></i>
-                                <span>925, GT Road, Near Gen. Bus Stand</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h6 class="small fw-medium mb-1">Amritsar</h6>
-                        <div class="text-muted small">
-                            <div class="d-flex align-items-start gap-1">
-                                <i class="bi bi-geo-alt mt-1"></i>
-                                <span>B - Block, Ranjit Avenue</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-2">
-                    <h6 class="fw-semibold mb-3">Follow Us</h6>
-                    <div class="d-flex gap-3">
-                        <a href="https://www.instagram.com/bhatiatravels_/?hl=en" target="_blank" class="text-pink">
-                            <i class="bi bi-instagram fs-5"></i>
-                        </a>
-                        <a href="https://www.facebook.com/bhatiatravels1982/" target="_blank" class="text-primary">
-                            <i class="bi bi-facebook fs-5"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-top mt-4 pt-3 text-center">
-                <p class="text-muted small mb-0">&copy; 2024 Bhatia Travels. All rights reserved. | IATA-Approved | TAAI Member</p>
-            </div>
-        </div>
-    </footer>
+            </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Custom JS -->
+            <script src="js/main.js"></script>
+            <script>
+                function showMap(city) {
+                    document.getElementById("map-jalandhar").classList.add("d-none");
+                    document.getElementById("map-amritsar").classList.add("d-none");
+                    document.getElementById("map-" + city).classList.remove("d-none");
+                }
+            </script>
+            <style>
+                .bg-gradient-danger {
+                    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+                }
 
-    <style>
-        .bg-gradient-danger {
-            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
-        }
-        .text-white-75 {
-            color: rgba(255, 255, 255, 0.75) !important;
-        }
-        .text-white-50 {
-            color: rgba(255, 255, 255, 0.5) !important;
-        }
-    </style>
+                .text-white-75 {
+                    color: rgba(255, 255, 255, 0.75) !important;
+                }
+
+                .text-white-50 {
+                    color: rgba(255, 255, 255, 0.5) !important;
+                }
+            </style>
 </body>
+
 </html>

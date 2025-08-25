@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Ticketing - Bhatia Travels</title>
-    <meta name="description" content="IATA-certified air ticketing services for domestic and international flights with competitive rates and customer support.">
-    
+    <meta name="description"
+        content="IATA-certified air ticketing services for domestic and international flights with competitive rates and customer support.">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -13,50 +15,70 @@
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="public/images/logo-main.png" alt="Bhatia Travels" width="40" height="40" class="me-2">
-                <div>
-                    <div class="fw-bold text-danger fs-5" style="font-family: 'Times New Roman', Times, serif;">BHATIA TRAVELS</div>
-                    <small class="text-muted">Est. 1982</small>
-                </div>
+                <img src="public/images/headerf1.jpeg" alt="Bhatia Travels" width="130" height="68" class="me-2">
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
+            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+
+                    <!-- Desktop Dropdown -->
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="visa.html">Visa Services</a></li>
-                            <li><a class="dropdown-item active" href="ticketing.html">Air Ticketing</a></li>
+                            <li><a class="dropdown-item" href="ticketing.html">Air Ticketing</a></li>
                             <li><a class="dropdown-item" href="packages.html">Holiday Packages</a></li>
                         </ul>
                     </li>
+
+                    <!-- Mobile (no dropdown, direct links) -->
+                    <li class="nav-item d-lg-none">
+                        <span class="nav-link fw-bold">Services</span>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="visa.html">Visa Services</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="ticketing.html">Air Ticketing</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="packages.html">Holiday Packages</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Ticketing Hero -->
-    <section class="bg-danger text-white py-5">
+    <section class="bg-dark-red text-white py-5">
         <div class="container text-center">
             <h1 class="display-4 fw-bold mb-4">Air Ticketing Services</h1>
             <p class="lead mb-3">IATA-certified ticketing services for domestic and international flights</p>
@@ -69,7 +91,8 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold mb-4">Our Flight Services</h2>
-                <p class="lead text-muted">Comprehensive air ticketing solutions with IATA certification and competitive rates</p>
+                <p class="lead text-muted">Comprehensive air ticketing solutions with IATA certification and competitive
+                    rates</p>
             </div>
 
             <div class="row g-4">
@@ -83,11 +106,12 @@
                                     <span class="badge bg-danger">Best Rates</span>
                                 </div>
                             </div>
-                            <p class="text-muted mb-4">Book domestic flights across India with all major airlines at competitive prices.</p>
+                            <p class="text-muted mb-4">Book domestic flights across India with all major airlines at
+                                competitive prices.</p>
                             <ul class="list-unstyled">
                                 <li><i class="bi bi-check-circle text-success me-2"></i>All Major Airlines</li>
                                 <li><i class="bi bi-check-circle text-success me-2"></i>Instant Booking</li>
-                                <li><i class="bi bi-check-circle text-success me-2"></i>24/7 Support</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Best Support</li>
                                 <li><i class="bi bi-check-circle text-success me-2"></i>Easy Cancellation</li>
                             </ul>
                         </div>
@@ -104,7 +128,8 @@
                                     <span class="badge bg-danger">IATA Certified</span>
                                 </div>
                             </div>
-                            <p class="text-muted mb-4">International flight bookings with global airlines and comprehensive travel support.</p>
+                            <p class="text-muted mb-4">International flight bookings with global airlines and
+                                comprehensive travel support.</p>
                             <ul class="list-unstyled">
                                 <li><i class="bi bi-check-circle text-success me-2"></i>Global Airlines</li>
                                 <li><i class="bi bi-check-circle text-success me-2"></i>Multi-city Options</li>
@@ -125,7 +150,8 @@
                                     <span class="badge bg-danger">Special Rates</span>
                                 </div>
                             </div>
-                            <p class="text-muted mb-4">Special group rates for corporate travel, family trips, and tour groups.</p>
+                            <p class="text-muted mb-4">Special group rates for corporate travel, family trips, and tour
+                                groups.</p>
                             <ul class="list-unstyled">
                                 <li><i class="bi bi-check-circle text-success me-2"></i>Corporate Rates</li>
                                 <li><i class="bi bi-check-circle text-success me-2"></i>Flexible Booking</li>
@@ -146,12 +172,13 @@
                                     <span class="badge bg-danger">Comprehensive</span>
                                 </div>
                             </div>
-                            <p class="text-muted mb-4">Complete travel insurance coverage for domestic and international travel.</p>
+                            <p class="text-muted mb-4">Complete travel insurance coverage for domestic and international
+                                travel.</p>
                             <ul class="list-unstyled">
                                 <li><i class="bi bi-check-circle text-success me-2"></i>Medical Coverage</li>
                                 <li><i class="bi bi-check-circle text-success me-2"></i>Trip Cancellation</li>
                                 <li><i class="bi bi-check-circle text-success me-2"></i>Baggage Protection</li>
-                                <li><i class="bi bi-check-circle text-success me-2"></i>24/7 Assistance</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Assistance</li>
                             </ul>
                         </div>
                     </div>
@@ -170,34 +197,40 @@
 
             <div class="row g-4">
                 <div class="col-md-4 text-center">
-                    <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                    <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width: 80px; height: 80px;">
                         <i class="bi bi-award fs-3"></i>
                     </div>
                     <h5 class="fw-bold mb-3">IATA Certified</h5>
-                    <p class="text-muted">Globally recognized certification ensuring professional ticketing standards and reliability.</p>
+                    <p class="text-muted">Globally recognized certification ensuring professional ticketing standards
+                        and reliability.</p>
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                    <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width: 80px; height: 80px;">
                         <i class="bi bi-currency-rupee fs-3"></i>
                     </div>
                     <h5 class="fw-bold mb-3">Best Prices</h5>
-                    <p class="text-muted">Competitive rates with all major airlines and special corporate discounts available.</p>
+                    <p class="text-muted">Competitive rates with all major airlines and special corporate discounts
+                        available.</p>
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                    <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width: 80px; height: 80px;">
                         <i class="bi bi-headset fs-3"></i>
                     </div>
-                    <h5 class="fw-bold mb-3">24/7 Support</h5>
-                    <p class="text-muted">Round-the-clock customer support for booking assistance and travel emergencies.</p>
+                    <h5 class="fw-bold mb-3">Best Support</h5>
+                    <p class="text-muted">Round-the-clock customer support for booking assistance and travel
+                        emergencies.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact CTA -->
-    <section class="py-5 bg-danger text-white">
+    <section class="py-5 bg-dark-red text-white">
         <div class="container text-center">
             <h2 class="display-5 fw-bold mb-4">Ready to Book Your Flight?</h2>
             <p class="lead mb-4">Contact our ticketing experts for the best deals and personalized service</p>
@@ -208,8 +241,10 @@
                 <a href="https://wa.me/919915327575" class="btn btn-success btn-lg px-4">
                     <i class="bi bi-whatsapp me-2"></i>WhatsApp Now
                 </a>
-                <a href="mailto:fly@bhatiatravels.com" class="btn btn-outline-light btn-lg px-4">
-                    <i class="bi bi-envelope me-2"></i>Email Us
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fly@bhatiatravels.com&su=Travel%20Inquiry&body=Hello%20Bhatia%20Travels%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                    target="_blank" class="btn btn-outline-light btn-lg px-4">
+                    <i class="bi bi-envelope me-2"></i>
+                    Email Us
                 </a>
             </div>
         </div>
@@ -221,10 +256,12 @@
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="public/images/logo-footer.png" alt="Bhatia Travels" width="28" height="28">
-                        <h5 class="fw-bold text-danger mb-0" style="font-family: 'Times New Roman', Times, serif;">BHATIA TRAVELS</h5>
+                        <img src="public/images/footerl1.jpeg" alt="Bhatia Travels" width="240" height="58">
+                        <!--  <h5 class="fw-bold text-danger mb-0" style="font-family: 'Times New Roman', Times, serif;">
+                            BHATIA TRAVELS</h5> -->
                     </div>
-                    <p class="text-muted small mb-3">Founded in 1982, bringing over 40 years of expertise in travel and tourism.</p>
+                    <p class="text-muted small mb-3">Founded in 1982, bringing over 40 years of expertise in travel and
+                        tourism.</p>
                     <div class="small text-danger">
                         <div class="d-flex align-items-center gap-2 mb-1">
                             <i class="bi bi-telephone"></i>
@@ -236,18 +273,20 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-2">
                     <h6 class="fw-semibold mb-3">Quick Links</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-1"><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
                         <li class="mb-1"><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
-                        <li class="mb-1"><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
-                        <li class="mb-1"><a href="packages.html" class="text-muted text-decoration-none">Tour Packages</a></li>
+                        <li class="mb-1"><a href="services.html" class="text-muted text-decoration-none">Services</a>
+                        </li>
+                        <li class="mb-1"><a href="packages.html" class="text-muted text-decoration-none">Tour
+                                Packages</a></li>
                         <li class="mb-1"><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="col-md-2">
                     <h6 class="fw-semibold mb-3">Our Services</h6>
                     <ul class="list-unstyled small text-muted">
@@ -258,7 +297,7 @@
                         <li class="mb-1">Destination Weddings</li>
                     </ul>
                 </div>
-                
+
                 <div class="col-md-3">
                     <h6 class="fw-semibold mb-3">Office Locations</h6>
                     <div class="mb-3">
@@ -280,7 +319,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-2">
                     <h6 class="fw-semibold mb-3">Follow Us</h6>
                     <div class="d-flex gap-3">
@@ -293,9 +332,10 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-top mt-4 pt-3 text-center">
-                <p class="text-muted small mb-0">&copy; 2024 Bhatia Travels. All rights reserved. | IATA-Approved | TAAI Member</p>
+                <p class="text-muted small mb-0">&copy; 2024 Bhatia Travels. All rights reserved. | IATA-Approved | TAAI
+                    Member</p>
             </div>
         </div>
     </footer>
@@ -311,4 +351,5 @@
         }
     </style>
 </body>
+
 </html>
