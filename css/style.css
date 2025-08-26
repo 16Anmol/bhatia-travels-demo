@@ -112,8 +112,13 @@ body {
 .bg-dark-red {
   background: linear-gradient(135deg, #c91b1bff 0%, #b91c1c 100%);
 }
+
+.btn-dark-red {
+  background: linear-gradient(135deg, #c91b1bff 0%, #b91c1c 100%);
+  color: #fff !important;
+}
 .text-dark-red {
-  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  background: linear-gradient(135deg, #c91b1bff 0%, #b91c1c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
